@@ -31,7 +31,7 @@ foreach my $srcfna (@ARGV){
 		      'when_to_transfer_output = ON_EXIT',
 		      'transfer_input_files = '.$srcfna,
 		      'request_cpus = 1',
-		      'request_memory = 3GB',
+		      'request_memory = 5GB',
 		      'request_disk = 30GB',
 		      'queue 1'
 	);
