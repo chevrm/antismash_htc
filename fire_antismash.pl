@@ -10,7 +10,7 @@ $pref =~ s/\.fna$/_as/;
 my $logfile = $pref.'.log';
 my $as_cmd = "antismash --outputfolder $pref $fna";
 system("echo 'WHOAMI:' >> $logfile");
-system("whoami:' >> $logfile");
+system("whoami >> $logfile");
 system("echo 'antismash permissions:' >> $logfile");
 system("ls -l /miniconda2/bin/antismash >> $logfile");
 system("echo 'CMD: $as_cmd' >> $logfile");
