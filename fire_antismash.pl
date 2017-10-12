@@ -11,6 +11,8 @@ my $logfile = $pref.'.log';
 my $as_cmd = "antismash --outputfolder $pref $fna";
 system("echo 'WHOAMI:' >> $logfile");
 system("whoami >> $logfile 2>&1");
+system("echo 'which antismash:' >> $logfile");
+system("which antismash >> $logfile 2>&1");
 system("echo 'antismash permissions:' >> $logfile");
 system("ls -l /miniconda2/bin/antismash >> $logfile 2>&1");
 system("echo 'CMD: $as_cmd' >> $logfile");
